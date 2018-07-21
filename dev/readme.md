@@ -1,6 +1,7 @@
-EasyRTC Dev Folder
-==================
+# RTCMultiConnection Development files
 
-Any files used strictly by the EasyRTC dev team is kept here. This includes release scripts, dev tests, dictionary words, and dev-only documentation.
+These are small pieces of JavaScript files that are used to generate `RTCMultiConnection.js`!!!
 
-Nothing here should be needed by end users.
+# For contributions, you have to modify these files
+
+Then use `grunt` to compile `RTCMultiConnection.js` again.

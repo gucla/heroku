@@ -1,155 +1,107 @@
-![EasyRTC](./api/img/easyrtc.png "EasyRTC")
+<a href="https://www.rtcmulticonnection.org/"><img src="https://i.imgur.com/MFfRBSM.png" /></a>
 
-EasyRTC
-=======
+## RTCMultiConnection - WebRTC JavaScript Library
 
-Note: for last fixes use beta branch (@hthetiot 07-19-2018)
-> npm install easyrtc@priologic/easyrtc#beta
+### Demos: https://rtcmulticonnection.herokuapp.com/demos/
 
-**A bundle of Open Source WebRTC joy!**
+[![npm](https://img.shields.io/npm/v/rtcmulticonnection.svg)](https://npmjs.org/package/rtcmulticonnection) [![downloads](https://img.shields.io/npm/dm/rtcmulticonnection.svg)](https://npmjs.org/package/rtcmulticonnection) [![Build Status: Linux](https://travis-ci.org/muaz-khan/RTCMultiConnection.png?branch=master)](https://travis-ci.org/muaz-khan/RTCMultiConnection)
 
-Priologic's EasyRTC, a bundle of Open Source WebRTC joy, include an EasyRTC server andclient API, HTML5 and JavaScript demos under a BSD 2 license.
+# Install On Your Own Site
 
-Features
---------
- * Install EasyRTC's WebRTC Server on your own Linux, Windows, or Mac server in minutes not days.
- * Use our EasyRTC API and sample application code to build and deploy your WebRTC app in hours not weeks.
- * EasyRTC is completely free and open source under a BSD 2 license. No usage costs or other hidden fees.
+* https://github.com/muaz-khan/RTCMultiConnection/tree/master/docs/installation-guide.md
 
+# YouTube videos
 
-Installation In A Nutshell
---------------------------
- 1. Install [Node.js](http://nodejs.org)
- 2. Download the EasyRTC distribution from github (https://github.com/priologic/easyrtc.git)
- 3. Run `npm install` in the easyrtc directory.
- 4. Enter the easyrtc/server_example directory by executing `cd server_example`
- 5. Run `npm install` in the server_example directory.
- 4. Start EasyRTC by running `node server.js` while in the server_example directory.
- 5. Browse the examples using a WebRTC enabled browser. *(defaults to port `8080`)*
+1. [Getting started guide / RTCMultiConnection](https://www.youtube.com/watch?v=jqtC7mSTCgk)
+2. [Setup custom socket.io server / RTCMultiConnection](https://www.youtube.com/watch?v=EtsiYEW_T8Y)
+3. [Write screen sharing applications / RTCMultiConnection](https://www.youtube.com/watch?v=nBUuMKtEeyU)
+4. [YouTube Playlist](https://www.youtube.com/playlist?list=PLPRQUXAnRydKdyun-vjKPMrySoow2N4tl)
+5. RTCMultiConnection-v2 (old) videos: https://vimeo.com/muazkh
 
-Important note: Chrome will not grant access to local microphones or cameras for a page served using http except for the localhost case. See the docs/easyrtc_server_ssl.md file for instructions on serving files using https.
+# [Docs/Tutorials](https://github.com/muaz-khan/RTCMultiConnection/tree/master/docs/)
 
-Step by step instructions including additional setup options can be found in `/docs/easyrtc_server_install.md`
+1. [Getting Started guide for RTCMultiConnection](https://github.com/muaz-khan/RTCMultiConnection/tree/master/docs/getting-started.md)
+2. [Installation Guide](https://github.com/muaz-khan/RTCMultiConnection/tree/master/docs/installation-guide.md)
+3. [How to Use?](https://github.com/muaz-khan/RTCMultiConnection/tree/master/docs/how-to-use.md)
+4. [API Reference](https://github.com/muaz-khan/RTCMultiConnection/tree/master/docs/api.md)
+5. [Upgrade from v2 to v3](https://github.com/muaz-khan/RTCMultiConnection/tree/master/docs/upgrade.md)
+6. [How to write iOS/Android applications?](https://github.com/muaz-khan/RTCMultiConnection/tree/master/docs/ios-android.md)
+7. [Tips & Tricks](https://github.com/muaz-khan/RTCMultiConnection/blob/master/docs/tips-tricks.md)
 
-Note: there is no corresponding need to install the client files specifically; they were installed as part of EasyRTC in step 3.
+# iOS+Android Demo Apps
 
-Documentation
--------------
-All documentation can be found within [the docs folder](./docs/).
+> Note: RTCMultiConnection supports Safari-11 browser both on iOS and MacOSX.
+> 
+> So you do not need to build a cordova or ionic application.
 
-**EasyRTC Server**
+* https://webrtcweb.com/cordova-apps/
 
- * [Install instructions for Ubuntu, Windows, and Mac](./docs/easyrtc_server_install.md)
-     * `/docs/easyrtc_server_install.md`
- * [Configuration options](./docs/easyrtc_server_configuration.md)
-     * `/docs/easyrtc_server_configuration.md`
- * [Using Server Events](./docs/easyrtc_server_events.md)
-     * `/docs/easyrtc_server_events.md`  
- * Server API
-     * `/docs/server_html_docs/index.html`  
+# Demos
 
-**EasyRTC Client API**
- * [Client API tutorial](./docs/easyrtc_client_tutorial.md)
-     * `/docs/easyrtc_client_tutorial.md`
- * Client API
-     * `/docs/client_html_docs/easyrtc.html`
- * Client File Transfer API
-     * `/docs/client_html_docs/easyrtc_ft.html`
+* [List of All RTCMultiConnection Demos](https://rtcmulticonnection.herokuapp.com/demos/)
 
-**General Development**
- * [Frequently asked questions](./docs/easyrtc_faq.md)
-     * `/docs/easyrtc_faq.md`
- * [Authentication](./docseasyrtc_authentication.md/)
-     * `/docs/easyrtc_authentication.md`  
- * [ICE, TURN, STUN Configuration](./docs/easyrtc_server_ice.md)
-     * `/docs/easyrtc_server_ice.md`  
- * [Using Rooms](./docs/easyrtc_rooms.md)
-     * `/docs/easyrtc_rooms.md`  
- * [Serving with SSL](./docs/easyrtc_server_ssl.md)
-     * `/docs/easyrtc_server_ssl.md`  
- * [Serving next to IIS or Apache](./docs/easyrtc_with_other_servers.md)
-     * `/docs/easyrtc_with_other_servers.md`  
- * [Upcoming features](./docs/easyrtc_upcoming_features.md)
-     * `/docs/easyrtc_upcoming_features.md`
- * [Common WebRTC problems](./docs/easyrtc_webrtc_problems.md)
-     * `/docs/easyrtc_webrtc_problems.md`
- * [Changelog](./docs/easyrtc_changelog.md)
-     * `/docs/easyrtc_changelog.md`
+| DemoTitle        | TestLive           | ViewSource |
+| ------------- |-------------|-------------|
+| Audio+Video+File+TextChat | [Demo](https://rtcmulticonnection.herokuapp.com/demos/Audio+Video+TextChat+FileSharing.html) | [Source](https://github.com/muaz-khan/RTCMultiConnection/tree/master/demos/Audio+Video+TextChat+FileSharing.html) |
+| Pre-recorded media streaming (webm/mp3 live streaming) | [Demo](https://rtcmulticonnection.herokuapp.com/demos/Pre-recorded-Media-Streaming.html) | [Source](https://github.com/muaz-khan/RTCMultiConnection/tree/master/demos/Pre-recorded-Media-Streaming.html) |
+| FileSharing | [Demo](https://rtcmulticonnection.herokuapp.com/demos/file-sharing.html) | [Source](https://github.com/muaz-khan/RTCMultiConnection/tree/master/demos/file-sharing.html) |
+| Scalable Audio/Video Broadcast | [Demo](https://rtcmulticonnection.herokuapp.com/demos/Scalable-Broadcast.html) | [Source](https://github.com/muaz-khan/RTCMultiConnection/tree/master/demos/Scalable-Broadcast.html) |
+| Scalable Screen Broadcast | [Demo](https://rtcmulticonnection.herokuapp.com/demos/Scalable-Screen-Broadcast.html) | [Source](https://github.com/muaz-khan/RTCMultiConnection/tree/master/demos/Scalable-Screen-Broadcast.html) |
+| Scalable Video Broadcast | [Demo](https://rtcmulticonnection.herokuapp.com/demos/Video-Scalable-Broadcast.html) | [Source](https://github.com/muaz-khan/RTCMultiConnection/tree/master/demos/Video-Scalable-Broadcast.html) |
+| Scalable File Sharing | [Demo](https://rtcmulticonnection.herokuapp.com/demos/Files-Scalable-Broadcast.html) | [Source](https://github.com/muaz-khan/RTCMultiConnection/tree/master/demos/Files-Scalable-Broadcast.html) |
+| Video Conferencing | [Demo](https://rtcmulticonnection.herokuapp.com/demos/Video-Conferencing.html) | [Source](https://github.com/muaz-khan/RTCMultiConnection/tree/master/demos/Video-Conferencing.html) |
+| SSEConnection (Server Sent Events) | [Demo](https://rtcmulticonnection.herokuapp.com/demos/SSEConnection.html) | [Source](https://github.com/muaz-khan/RTCMultiConnection/tree/master/demos/SSEConnection.html) |
+| Audio+Video+Screen Sharing | [Demo](https://rtcmulticonnection.herokuapp.com/demos/Audio-Video-Screen.html) | [Source](https://github.com/muaz-khan/RTCMultiConnection/tree/master/demos/Audio-Video-Screen.html) |
+| One-to-One Video Chat | [Demo](https://rtcmulticonnection.herokuapp.com/demos/One-to-One.html) | [Source](https://github.com/muaz-khan/RTCMultiConnection/tree/master/demos/One-to-One.html) |
+| Audio Conferencing | [Demo](https://rtcmulticonnection.herokuapp.com/demos/Audio-Conferencing.html) | [Source](https://github.com/muaz-khan/RTCMultiConnection/tree/master/demos/Audio-Conferencing.html) |
+| Video Broadcasting | [Demo](https://rtcmulticonnection.herokuapp.com/demos/Video-Broadcasting.html) | [Source](https://github.com/muaz-khan/RTCMultiConnection/tree/master/demos/Video-Broadcasting.html) |
+| TextChat+FileSharing | [Demo](https://rtcmulticonnection.herokuapp.com/demos/TextChat+FileSharing.html) | [Source](https://github.com/muaz-khan/RTCMultiConnection/tree/master/demos/TextChat+FileSharing.html) |
+| addStream in a Chat room | [Demo](https://rtcmulticonnection.herokuapp.com/demos/addStream-in-Chat-room.html) | [Source](https://github.com/muaz-khan/RTCMultiConnection/tree/master/demos/addStream-in-Chat-room.html) |
+| Part-of-Screen Sharing | [Demo](https://rtcmulticonnection.herokuapp.com/demos/share-part-of-screen.html) | [Source](https://github.com/muaz-khan/RTCMultiConnection/tree/master/demos/share-part-of-screen.html) |
+| Share Audio+Screen | [Demo](https://rtcmulticonnection.herokuapp.com/demos/Audio+ScreenSharing.html) | [Source](https://github.com/muaz-khan/RTCMultiConnection/tree/master/demos/Audio+ScreenSharing.html) |
+| Screen Sharing | [Demo](https://rtcmulticonnection.herokuapp.com/demos/Screen-Sharing.html) | [Source](https://github.com/muaz-khan/RTCMultiConnection/tree/master/demos/screen-sharing.html) |
+| Disconnect/Rejoin rooms | [Demo](https://rtcmulticonnection.herokuapp.com/demos/Disconnect+Rejoin.html) | [Source](https://github.com/muaz-khan/RTCMultiConnection/tree/master/demos/Disconnect+Rejoin.html) |
+| Password Protected Rooms | [Demo](https://rtcmulticonnection.herokuapp.com/demos/Password-Protected-Rooms.html) | [Source](https://github.com/muaz-khan/RTCMultiConnection/tree/master/demos/Password-Protected-Rooms.html) |
+| replaceTrack in Firefox | [Demo](https://rtcmulticonnection.herokuapp.com/demos/replaceTrack.html) | [Source](https://github.com/muaz-khan/RTCMultiConnection/tree/master/demos/replaceTrack.html) |
+| applyConstraints in Firefox | [Demo](https://rtcmulticonnection.herokuapp.com/demos/applyConstraints.html) | [Source](https://github.com/muaz-khan/RTCMultiConnection/tree/master/demos/applyConstraints.html) |
+| Firebase-Demo | [Demo](https://rtcmulticonnection.herokuapp.com/demos/Firebase-Demo.html) | [Source](https://github.com/muaz-khan/RTCMultiConnection/tree/master/demos/Firebase-Demo.html) |
+| PubNub Demo | [Demo](https://rtcmulticonnection.herokuapp.com/demos/PubNub-Demo.html) | [Source](https://github.com/muaz-khan/RTCMultiConnection/tree/master/demos/PubNub-Demo.html) |
+| Socket.io Custom-Messaging | [Demo](https://rtcmulticonnection.herokuapp.com/demos/custom-socket-event.html) | [Source](https://github.com/muaz-khan/RTCMultiConnection/tree/master/demos/custom-socket-event.html) |
+| Check Rooms Presence | [Demo](https://rtcmulticonnection.herokuapp.com/demos/checkPresence.html) | [Source](https://github.com/muaz-khan/RTCMultiConnection/tree/master/demos/checkPresence.html) |
+| getPublicModerators | [Demo](https://rtcmulticonnection.herokuapp.com/demos/getPublicModerators.html) | [Source](https://github.com/muaz-khan/RTCMultiConnection/tree/master/demos/getPublicModerators.html) |
+| Change Cameras/Microphone | [Demo](https://rtcmulticonnection.herokuapp.com/demos/switch-cameras.html) | [Source](https://github.com/muaz-khan/RTCMultiConnection/tree/master/demos/switch-cameras.html) |
+| MultiRTC: Skype-like app | [Demo](https://rtcmulticonnection.herokuapp.com/demos/MultiRTC/) | [Source](https://github.com/muaz-khan/RTCMultiConnection/tree/master/demos/MultiRTC/) |
+| Change Video Resolutions in your Live Sessions | [Demo](https://rtcmulticonnection.herokuapp.com/demos/change-resolutions.html) | [Source](https://github.com/muaz-khan/RTCMultiConnection/tree/master/demos/change-resolutions.html) |
+| Admin/Guest demo | [Demo](https://rtcmulticonnection.herokuapp.com/demos/admin-guest.html) | [Source](https://github.com/muaz-khan/RTCMultiConnection/tree/master/demos/admin-guest.html) |
+| Check if StreamHasData | [Demo](https://rtcmulticonnection.herokuapp.com/demos/StreamHasData.html) | [Source](https://github.com/muaz-khan/RTCMultiConnection/tree/master/demos/StreamHasData.html) |
+| Capture & Share Screen from any domain! | [Demo](https://rtcmulticonnection.herokuapp.com/demos/Cross-Domain-Screen-Capturing.html) | [Source](https://github.com/muaz-khan/RTCMultiConnection/tree/master/demos/Cross-Domain-Screen-Capturing.html) |
+| SignalR demo for RTCMultiConnection | -- | [Source](https://github.com/muaz-khan/RTCMultiConnection-SignalR) |
 
+# Older Versions
 
-Folder Structure
-----------------
+* https://github.com/muaz-khan/RTCMultiConnection/tree/master/v2.2.2
 
- * / (root)
-   * Licenses and package information
- * /api/
-   * Client API files including easyrtc.js  
- * /demos/
-   * EasyRTC live demos and example code
- * /docs/
-   * Documentation for using the API and running the server
- * /lib/
-   * Required libraries
- * /node_modules/
-   * Required node.js modules
-   * This folder will be created during the install
- * /server_example/
-   * A simple server example  
+# [Wiki Pages](https://github.com/muaz-khan/RTCMultiConnection/wiki)
 
+* [List of Breaking Changes](https://github.com/muaz-khan/RTCMultiConnection/wiki/Breaking-Changes)
+* [Coding Tricks](https://github.com/muaz-khan/RTCMultiConnection/wiki/Coding-Tricks)
+* [Switch Between Cameras](https://github.com/muaz-khan/RTCMultiConnection/wiki/Switch-between-cameras)
+* [Bandwidth Management](https://github.com/muaz-khan/RTCMultiConnection/wiki/Bandwidth-Management)
+* [Channels and Sessions Management](https://github.com/muaz-khan/RTCMultiConnection/wiki/Channels-and-Sessions)
+* [How to send Custom/Private messages?](https://github.com/muaz-khan/RTCMultiConnection/wiki/Custom-Messages)
+* [Custom Private Servers](https://github.com/muaz-khan/RTCMultiConnection/wiki/Custom-Private-Servers)
+* [How to link RTCMultiConnection.js?](https://github.com/muaz-khan/RTCMultiConnection/wiki/How-to-link-RTCMultiConnection.js%3F)
+* [How to fix echo?](https://github.com/muaz-khan/RTCMultiConnection/wiki/How-to-fix-echo%3F)
+* [How to share Part-of-Screen?](https://github.com/muaz-khan/RTCMultiConnection/wiki/Part-of-Screen-Sharing)
+* [How to detect Presence of the users & sessions?](https://github.com/muaz-khan/RTCMultiConnection/wiki/Presence-Detection)
+* [How to share screen?](https://github.com/muaz-khan/RTCMultiConnection/wiki/Screen-Sharing)
+* [How to secure your RTCMultiConnection codes?](https://github.com/muaz-khan/RTCMultiConnection/wiki/Security)
+* [Use WebSync Signaling Server in any RTCMultiConnection demo](https://github.com/muaz-khan/RTCMultiConnection/wiki/WebSync-Signaling-Server)
+* [How to implement client-side (local) screen-sharing without involving any 3rd-party service or extension or addon](https://github.com/muaz-khan/RTCMultiConnection/wiki/Screen-Sharing-on-your-Local-Server)
+* [Detect Who is Speaking](https://github.com/muaz-khan/RTCMultiConnection/wiki/Detect-Who-is-Speaking)
+* [Select Camera and Microphone Devices](https://github.com/muaz-khan/RTCMultiConnection/wiki/Select-Camera-and-Microphone-Devices)
+* [Fix Duplicate Videos Issues](https://github.com/muaz-khan/RTCMultiConnection/wiki/Fix-Duplicate-Videos-Issues)
 
-Included Demos
---------------
+## License
 
-EasyRTC comes with a number of demo's which work immediately after installation.
-
- * Video and/or Audio connections
- * Multi-party video chat
- * Text Messaging with or without Data Channels
- * Screen and tab sharing
- * File transfer
- * Client side video recording
-
-
-Links for help and information
-------------------------------
-
-* The EasyRTC website is at:
-  * [http://www.easyrtc.com/](http://www.easyrtc.com/)
-* Use our support forum is at:
-  * [https://easyrtc.com/forum/](https://easyrtc.com/forum/)
-* Live demo site:
-  * [http://demo.easyrtc.com/](http://demo.easyrtc.com/)
-* Bugs and requests can be filed on our github page or on the forum:
-  * [https://github.com/priologic/easyrtc/issues](https://github.com/priologic/easyrtc/issues)
-* Our YouTube channel has live demo's:
-  * [http://www.youtube.com/user/priologic](http://www.youtube.com/user/priologic)
-* Information on complimentary EasyRTC commercial products can be found here: 
-  * [Product and support pricing - https://easyrtc.com/pricing/](https://easyrtc.com/pricing/)
-
-
-License
--------
-
-Copyright (c) 2016, Priologic Software Inc.
-All rights reserved.
-
-Redistribution and use in source and binary forms, with or without
-modification, are permitted provided that the following conditions are met:
-
-    * Redistributions of source code must retain the above copyright notice,
-      this list of conditions and the following disclaimer.
-    * Redistributions in binary form must reproduce the above copyright
-      notice, this list of conditions and the following disclaimer in the
-      documentation and/or other materials provided with the distribution.
-
-THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS"
-AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
-IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE
-ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE
-LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR
-CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF
-SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS
-INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN
-CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE)
-ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE
-POSSIBILITY OF SUCH DAMAGE.
+[RTCMultiConnection](https://github.com/muaz-khan/RTCMultiConnection) is released under [MIT licence](https://github.com/muaz-khan/RTCMultiConnection/blob/master/LICENSE.md) . Copyright (c) [Muaz Khan](https://MuazKhan.com/).
