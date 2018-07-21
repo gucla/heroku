@@ -1,0 +1,29 @@
+{
+  "name": "heroku",
+  "version": "0.2.0",
+  "description": "teste",
+  "main": "main.js",
+  "scripts": {
+    "start": "main.js"
+  },
+  "dependencies": {
+    "express": "^4.13.3"
+  },
+  "engines": {
+    "node": "4.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/gucla/heroku"
+  },
+  "keywords": [
+    "node",
+    "heroku",
+    "express"
+  ],
+  "author": "gucla",
+  "contributors": [
+    "gucla"
+  ],
+  "license": "MIT"
+}
