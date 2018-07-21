@@ -1,0 +1,37 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+   <script src="RTCMultiConnection.js"></script>
+<script src="FileBufferReader.js"></script>
+
+<script src="main.css"></script>
+<!-- socket.io for signaling -->
+<script src="socket.io/socket.io.js"></script>
+</head>
+<body>
+        <h1>VC</h1>
+        <hr>
+        <input type="text" id="room-id" value="abcdef">
+        <button id="open-room">Open Room</button>
+        <button id="join-room">Join Room</button>
+        <button id="open-or-join-room">Auto Open Or Join Room</button>
+        <hr>
+        <div id="chat-container">
+            <input type="text" id="input-text-chat" placeholder="Enter Text Chat" disabled>
+            <button id="share-file" disabled>Share File</button>
+            <br>
+            <div id="file-container"></div>
+            <div class="chat-output"></div>
+        </div>
+        <hr>
+</body>
+
+<script src="main.js"></script>
+</html>
+
+
