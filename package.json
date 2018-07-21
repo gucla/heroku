@@ -2,9 +2,9 @@
   "name": "heroku",
   "version": "0.2.0",
   "description": "teste",
-  "main": "main.js",
+  "main": "RTCMultiConnection.js",
   "scripts": {
-    "start": "node main.js"
+    "start": "node RTCMultiConnection.js"
   },
   "dependencies": {
     "express": "^4.13.3"
