@@ -2,9 +2,9 @@
   "name": "heroku",
   "version": "0.2.0",
   "description": "teste",
-  "main": "RTCMultiConnection.js",
+  "main": "nada.js",
   "scripts": {
-    "start": "node RTCMultiConnection.js"
+    "start": "node nada.js"
   },
   "dependencies": {
     "express": "^4.13.3"
