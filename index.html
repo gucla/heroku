@@ -1,13 +1,23 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
-<html lang="en">
+﻿<script src="https://rawgit.com/muaz-khan/RTCMultiConnection/master/dist/RTCMultiConnection.min.js"></script>
+<script src="FileBufferReader.js"></script>
 
-<head>
-    <meta http-equiv="content-type" content="text/html; charset=utf-8">
-    <title>Title Goes Here</title>
-</head>
+<script src="main.css"></script>
+<!-- socket.io for signaling -->
+<script src="https://mockcourt.herokuapp.com/socket.io/socket.io.js"></script>
 
-<body>
-    <p>Olá</p>
-</body>
-
-</html>
+<h1>VC</h1>
+<hr>
+<input type="text" id="room-id" value="abcdef">
+<button id="open-room">Open Room</button>
+<button id="join-room">Join Room</button>
+<button id="open-or-join-room">Auto Open Or Join Room</button>
+<hr>
+<div id="chat-container">
+    <input type="text" id="input-text-chat" placeholder="Enter Text Chat" disabled>
+    <button id="share-file" disabled>Share File</button>
+    <br>
+    <div id="file-container"></div>
+    <div class="chat-output"></div>
+</div>
+<hr>
+<script src="main.js"></script>
